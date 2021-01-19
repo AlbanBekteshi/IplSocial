@@ -17,6 +17,7 @@ class MailController{
 
     public function checkChamps(String $str):String {
         if(empty($str)) return "Champs vide";
+        if(strpos($str,"@")===false) return "@ non présent";
     }
 
 

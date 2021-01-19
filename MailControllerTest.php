@@ -23,7 +23,13 @@ class MailControllerTest extends TestCase
 
         $this->assertEquals("Champs vide", $actual);
     }
+    public function test_arobasenonpresent()
+    {
 
+    $actual = $this->mailController->checkChamps("zelda");
 
+    $this->assertEquals("@ non présent", $actual);
+
+    }
 
 }
