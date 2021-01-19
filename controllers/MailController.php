@@ -6,9 +6,12 @@ class MailController{
     }
 
     public function run(){
+        if (!empty($_POST)) {
+            $message = $_POST['email'];
+            $msg = $this->checkChamps($_POST['email']);
 
-
-        #require_once la vue de la page
+            #require_once la vue de la page
+        }
         require_once(CHEMIN_VUES . 'mail.php');
     }
 
