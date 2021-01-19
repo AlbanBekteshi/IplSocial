@@ -9,4 +9,4 @@
         </form>
     </div>
     <p><?php if(isset($msg)) echo $msg ?></p>
-</div><!-- #contenu -->
+</div>
